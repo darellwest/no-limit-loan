@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loan Without Limitations</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="temp/styles/styles.css">
+	  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="profile" class="dashboard-body">
+	<header id="header" class="site-header site-header--dashboard">
+		<div class="wrapper">
+			<div class="site-header__menu-content--dashboard">
+				<nav class="primary-nav primary-nav--dashboard primary-nav--pull-right">
+					<ul>
+						<li> 
+							<div class="notification-dot"></div>
+							<a class="fas fa-envelope icons" href=""></a>
+						</li>
+						<li>
+							<div class="notification-dot"></div>
+							<a class="fas fa-bell icons" href=""></a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div id="site-header__dashboard-menu-icon" class="site-header__menu-icon">
+				<div class="site-header__menu-icon__middle"></div>
+			</div>
+		</div>
+	</header>
+	<div class="modal">
+		<div class="side-bar">
+			<div class="side-bar__nav-container side-bar__header">
+				<div class="side-bar__user-pic">
+					<img src="./assets/images/profile_image.jpg">
+					<div class="side-bar__username">
+						<p>Welcome! <span>Njoagwu Darell</span></p>
+					</div>
+				</div>
+				<div class="side-bar__last-seen">
+					<p>Last Login <span>Jan 14, 11:48 PM</span></p>
+				</div>
+				<!-- <div class="side-bar__item">
+					<div class="icons--item">
+						<span class="fa fa-dashboard icons--item__icon"></span>
+					</div>
+					<div class="side-bar__nav-title">General</div>
+				</div> -->
+			</div>
+			<div class="side-bar__nav-container">
+				<div class="side-bar__item">
+					<div class="icons--item">
+						<span class="fa fa-dashboard icons--item__icon"></span>
+					</div>
+					<div class="side-bar__nav-title"><a href="dashboard.html">General</a></div>
+				</div>
+			</div>
+			<div class="side-bar__nav-container">
+				<div class="side-bar__item">
+					<div class="icons--item">
+						<span class="fas fa-wallet icons--item__icon"></span>
+					</div>
+					<div class="side-bar__nav-title"><a href="credit-balance.html" >Credit Balance</a></div>
+				</div>
+			</div>
+			<div class="side-bar__nav-container">
+				<div class="side-bar__item">
+					<div class="icons--item">
+						<span class="fas fa-spinner icons--item__icon"></span>
+					</div>
+					<div class="side-bar__nav-title"><a href="loan-activities.html">Loan Activities</a></div>
+				</div>
+			</div>
+			<div class="side-bar__nav-container">
+				<div class="side-bar__item">
+					<div class="icons--item">
+						<span class="fas fa-envelope  icons--item__icon"></span>
+					</div>
+					<div class="side-bar__nav-title"><a href="contact-support.html">Contact Support</a></div>
+				</div>
+			</div>
+			<div class="side-bar__nav-container">
+				<div class="side-bar__item">
+					<div class="icons--item active">
+						<span class="fas fa-user icons--item__icon"></span>
+					</div>
+					<div class="side-bar__nav-title"><a href="profile.html" class="active">Profile</a></div>
+				</div>
+			</div>
+			<div class="side-bar__nav-container">
+				<div class="side-bar__item">
+					<div class="icons--item active--red">
+						<span class="fas fa-sign-out-alt icons--item__icon"></span>
+					</div>
+					<div class="side-bar__nav-title"><a href="profile.html" class="active--red">Sign Out</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="dashboard-content" class="dashboard-content">
+		<div class="wrapper section-pad--t">
+			<h3 class="generic-text generic-text--thin dashboard-content__heading">Profile</h3>
+			<div class="dashboard-content__container section-pad--block-t">	
+				<div class="profile section-pad--block-t">
+                    <div class="profile__id-info">  
+                        <div id="profile-state" class="profile__state">
+                            <div class="profile__user-state">
+                                <div class="profile__user-status-dot"></div>
+                                <div class="profile__user-status-text">Online</div>
+                            </div>
+                        </div>
+						<div id="profile-state-switch" class="profile__state-switch" style="background: red">
+							<div class="toggle-switch">
+								<div class="toggle-switch__bg"></div>
+								<div class="toggle-switch__circle"></div>
+							</div>
+						</div>
+                        <img class="profile__image" src="./assets/images/profile_image.jpg">
+                        <div class="profile__username"><h4>camelburn2</h4></div>
+                    </div>
+                    <div class="profile__basic-info section-pad--block-b">
+						<div class="profile__entry">
+                            <div>
+                                <span class="profile__entry-icon fas fa-user"></span>
+                                <span class="profile__entry-name">Name</span>
+                            </div>
+                            <div class="profile__entry-value"><span>Ewere Darell Njoagwu</span></div>
+                        </div>
+                        <div class="profile__entry">
+                            <div>
+                                <span class="profile__entry-icon fa fa-map-marker"></span>
+                                <span class="profile__entry-name">From</span>
+                            </div>
+                            <div class="profile__entry-value"><span>Nigeria</span></div>
+                        </div>
+                        <div class="profile__entry">
+                            <div>
+                                <span class="profile__entry-icon fas fa-user"></span>
+                                <span class="profile__entry-name">Member Since</span>
+                            </div>
+                            <div class="profile__entry-value"><span>March 2016</span></div>
+                        </div>
+                        <div class="profile__entry">
+                            <div>
+                                <span class="profile__entry-icon fas fa-sign-in-alt"></span>
+                                <span class="profile__entry-name">Login Frequency</span>
+                            </div>
+                            <div class="profile__entry-value"><span>5 times per month</span></div>
+                        </div>
+                        <div class="profile__entry">
+                            <div>
+                                <span class="profile__entry-icon fas fa-hand-holding-usd"></span>
+                                <span class="profile__entry-name">Loans Acquired</span>
+                            </div>
+                            <div class="profile__entry-value"><span>8</span></div>
+                        </div>
+                    </div>
+					<div class="profile__bank-accounts section-pad--t  section-pad--block-l section-pad--block-b">
+						<span class="fas fa-landmark profile__bank-icon"></span>
+						<h4 class="profile__account-head heading heading--5 heading--center">BANK ACCOUNTS</h4>
+						<div class="row row--gutter section-pad--block-r">
+							<div class="row__col-6">
+								<div class="profile__each-account section-pad--block-t ">
+									<div class="profile__bank-details section-pad--block-b section-pad--block-t">
+										<div>
+											<h4>First Bank</h4>
+											<p>31036529728</p>
+											<p>Ewere Darell Njoagwu</p>
+											<a href="" class="btn btn-centralize btn--center-text btn--active"><span class="fas fa-pen"></span> Edit Bank Account</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row__col-6">
+								<div class="profile__each-account section-pad--block-t">
+									<div class="profile__bank-details  profile__bank-details--blue section-pad--block-b section-pad--block-t">
+										<div>
+											<h4>First Bank</h4>
+											<p>31036529728</p>
+											<p>Ewere Darell Njoagwu</p>
+											<a href="" class="btn btn-centralize btn--center-text btn--active"><span class="fas fa-pen"></span> Edit Bank Account</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="section-pad--block-r">
+							<div class="profile__edit-btn">
+								<a href="" class="btn  btn--center-text btn--primary"><span class="fas fa-pen"></span> Edit Profile</a>
+							</div>
+							<div id="delete-btn" class="profile__delete-btn">
+								<a href="" class="btn btn--center-text btn--red"><span class="fas fa-trash"></span> Delete Profile</a>
+							</div>
+						</div>
+					</div>
+                </div>
+			</div>
+		</div>
+	</div>
+	<div id="delete-window" class="universal-modal">
+		<div class="universal-modal__container">
+			<div class="profile__delete-pop section-pad--block-t section-pad--block-b">
+				<h4 class="heading heading--center">Are you sure you want to delete your profile?</h4>
+				<div class="profile__del-confirm">
+					<div class="universal-modal__delete-no">
+						<a href="" class="btn btn--center-text btn--active btn--font-light universal-modal--off">No</a>
+					</div>
+					<div><a href="" class="btn btn--center-text btn--red btn--font-light">Yes</a></div>	
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="./temp/scripts/App.js"></script>
+</body>
+</html>

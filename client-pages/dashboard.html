@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loan Without Limitations</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../temp/styles/styles.css">
+	  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="dashboard-body">
+	<header id="header" class="site-header site-header--dashboard">
+		<div class="wrapper">
+			<div class="site-header__menu-content--dashboard">
+				<nav class="primary-nav primary-nav--dashboard primary-nav--pull-right">
+					<ul>
+						<li> 
+							<div class="notification-dot"></div>
+							<a class="fas fa-envelope icons" href="../inbox/user.html"></a>
+						</li>
+						<li>
+							<div class="notification-dot"></div>
+							<a class="fas fa-bell icons" href=""></a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div id="site-header__dashboard-menu-icon" class="site-header__menu-icon">
+				<div class="site-header__menu-icon__middle"></div>
+			</div>
+		</div>
+	</header>
+	<div class="modal">
+		<div class="side-bar">
+			<div class="side-bar__nav-container side-bar__header">
+				<div class="side-bar__user-pic">
+					<img src="../assets/images/profile_image.jpg">
+					<div class="side-bar__username">
+						<p>Welcome! <span>Njoagwu Darell</span></p>
+					</div>
+				</div>
+				<div class="side-bar__last-seen">
+					<p>Last Login <span>Jan 14, 11:48 PM</span></p>
+				</div>
+				<!-- <div class="side-bar__item">
+					<div class="icons--item">
+						<span class="fa fa-dashboard icons--item__icon"></span>
+					</div>
+					<div class="side-bar__nav-title">General</div>
+				</div> -->
+			</div>
+			<div class="side-bar__nav-container">
+				<div class="side-bar__item">
+					<div class="icons--item active">
+						<span class="fa fa-dashboard icons--item__icon"></span>
+					</div>
+					<div class="side-bar__nav-title"><a href="#" class="active">General</a></div>
+				</div>
+			</div>
+			<div class="side-bar__nav-container">
+				<div class="side-bar__item">
+					<div class="icons--item">
+						<span class="fas fa-wallet icons--item__icon"></span>
+					</div>
+					<div class="side-bar__nav-title"><a href="credit-balance.html">Credit Balance</a></div>
+				</div>
+			</div>
+			<div class="side-bar__nav-container">
+				<div class="side-bar__item">
+					<div class="icons--item">
+						<span class="fas fa-spinner icons--item__icon"></span>
+					</div>
+					<div class="side-bar__nav-title"><a href="loan-activities.html">Loan Activities</a></div>
+				</div>
+			</div>
+			<div class="side-bar__nav-container">
+				<div class="side-bar__item">
+					<div class="icons--item">
+						<span class="fas fa-envelope  icons--item__icon"></span>
+					</div>
+					<div class="side-bar__nav-title"><a href="contact-support.html">Contact Support</a></div>
+				</div>
+			</div>
+			<div class="side-bar__nav-container">
+				<div class="side-bar__item">
+					<div class="icons--item">
+						<span class="fas fa-user icons--item__icon"></span>
+					</div>
+					<div class="side-bar__nav-title"><a href="profile.html">Profile</a></div>
+				</div>
+			</div>
+			<div class="side-bar__nav-container">
+				<div class="side-bar__item">
+					<div class="icons--item active--red">
+						<span class="fas fa-sign-out-alt icons--item__icon"></span>
+					</div>
+					<div class="side-bar__nav-title"><a href="profile.html" class="active--red">Sign Out</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="dashboard-content" class="dashboard-content">
+		<div class="wrapper section-pad--t">
+			<h3 class="generic-text generic-text--thin dashboard-content__heading">General</h3>
+			<div class="dashboard-content__container">
+				<div class="dashboard-content__history-status row row--gutter">
+					<div class="dashboard-content__history row__col-6">
+						<h4 class="heading heading--center heading--space-down  heading--5">TOTAL LOANS OUTSTANDING</h4>
+						<div id="dash" class="dashboard-content__history-card section-pad--block-t section-pad--block-l section-pad--block-r">
+							<div class="dashboard-content__amount-new">
+								<div class="dashboard-content__disbursed-amount">$90,000,894,000</div>
+								<div class="dashboard-content__create-new-loan"><a href="" class="dashboard-content__new-loan-link"><span class="fas fa-plus"></span> Create New Loan</a></div>
+							</div>
+							<h6 class="generic-text generic-text--p-up">Loans Disbursed History</h6>
+						</div>
+					</div>
+					<div class="dashboard-content__status row__col-6">
+						<h4 class="heading heading--center heading--space-down  heading--5">OUTSTANDING DELAY STATUS</h4>
+						<div class="dashboard-content__status-container">
+							<div class="dashboard-content__status-each-container">
+								<div class="dashboard-content__status-each">
+									<div class="dashboard-content__status-each-head">
+										<div>
+											<h6 class="generic-text generic-text--thick generic-text--thick-no-p-up">Ontime</h6>
+											<h4 class="heading  heading--5">$23,000,000</h4>
+										</div>
+										<div>
+											<img class="dashboard-content__calender" src="../assets/images/ontime-icon.png">
+										</div>
+									</div>
+									<h6 class="generic-text generic-text--center">29 members</h6>
+								</div>
+								<div class="dashboard-content__status-each">
+									<div class="dashboard-content__status-each-head">
+										<div>
+											<h6 class="generic-text generic-text--thick generic-text--thick-no-p-up">30 Days Late</h6>
+											<h4 class="heading  heading--5">$23,000,000</h4>
+										</div>
+										<div>
+											<img class="dashboard-content__calender" src="../assets/images/calendar-30.png">
+										</div>
+									</div>
+									<h6 class="generic-text generic-text--center">5 members</h6>
+								</div>
+							</div>
+							<div class="dashboard-content__status-each-container">
+								<div class="dashboard-content__status-each">
+									<div class="dashboard-content__status-each-head">
+										<div>
+											<h6 class="generic-text generic-text--thick generic-text--thick-no-p-up">60 Days Late</h6>
+											<h4 class="heading  heading--5">$23,000,000</h4>
+										</div>
+										<div>
+											<img class="dashboard-content__calender" src="../assets/images/calendar-60.png">
+										</div>
+									</div>
+									<h6 class="generic-text generic-text--center">29 members</h6>
+								</div>
+								<div class="dashboard-content__status-each">
+									<div class="dashboard-content__status-each-head">
+										<div>
+											<h6 class="generic-text generic-text--thick generic-text--thick-no-p-up">90 Days Late</h6>
+											<h4 class="heading  heading--5">$23,000,000</h4>
+										</div>
+										<div>
+											<img class="dashboard-content__calender" src="../assets/images/calendar-90.png">
+										</div>
+									</div>
+									<h6 class="generic-text generic-text--center">5 members</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="loan-users section-pad--t section-pad--b row row--gutter">
+					<div class="loan-users__requesters row__col-6">
+						<h4 class="heading heading--center heading--space-down  heading--5">NEW LOAN REQUESTS</h4>
+						<div class="loan-users__each section-pad--block-l section-pad--block-r section-pad--block-t section-pad--block-b">
+							<div class="loan-users__info">
+								<div class="loan-users__pix-container">
+									<img src="../assets/images/profile_image.jpg" class="loan-users__pix">
+								</div>
+								<div class="loan-users__name-container">
+									<p class="loan-users__name">Njoagwu Ewere</p>
+								</div>
+							</div>
+							<div class="loan-users__info">
+								<div class="loan-users__info-each loan-users__info-each--message">
+									<a href="" class="fa fa-paper-plane" aria-hidden="true"></a>
+								</div>
+								<div class="loan-users__info-each">
+									<p class="loan-users__overall-rate"><span class="loan-users__approval-rate-red">2</span>/5</p>
+								</div>
+								<div class="loan-users__info-each">
+									<p class="loan-users__loan-amount">$3,000</p>
+								</div>
+							</div>
+						</div>
+						<div class="loan-users__each section-pad--block-l section-pad--block-r section-pad--block-t section-pad--block-b">
+							<div class="loan-users__info">
+								<div class="loan-users__pix-container">
+									<img src="../assets/images/profile_image.jpg" class="loan-users__pix">
+								</div>
+								<div class="loan-users__name-container">
+									<p class="loan-users__name">Njoagwu Ewere</p>
+								</div>
+							</div>
+							<div class="loan-users__info">
+								<div class="loan-users__info-each loan-users__info-each--message">
+									<a href="" class="fa fa-paper-plane" aria-hidden="true"></a>
+								</div>
+								<div class="loan-users__info-each">
+									<p class="loan-users__overall-rate"><span class="loan-users__approval-rate-orange">3.5</span>/5</p>
+								</div>
+								<div class="loan-users__info-each">
+									<p class="loan-users__loan-amount">$3,000</p>
+								</div>
+							</div>
+						</div>
+						<div class="loan-users__each section-pad--block-l section-pad--block-r section-pad--block-t section-pad--block-b">
+							<div class="loan-users__info">
+								<div class="loan-users__pix-container">
+									<img src="../assets/images/profile_image.jpg" class="loan-users__pix">
+								</div>
+								<div class="loan-users__name-container">
+									<p class="loan-users__name">Njoagwu Ewere</p>
+								</div>
+							</div>
+							<div class="loan-users__info">
+								<div class="loan-users__info-each loan-users__info-each--message">
+									<a href="" class="fa fa-paper-plane" aria-hidden="true"></a>
+								</div>
+								<div class="loan-users__info-each">
+									<p class="loan-users__overall-rate"><span class="loan-users__approval-rate-green">4.5</span>/5</p>
+								</div>
+								<div class="loan-users__info-each">
+									<p class="loan-users__loan-amount">$3,000</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="loan-users__requesters row__col-6">
+						<h4 class="heading heading--center heading--space-down  heading--5">DEFAULTER CASE MANAGEMENT</h4>
+						<div class="loan-users__each section-pad--block-l section-pad--block-r section-pad--block-t section-pad--block-b">
+							<div class="loan-users__info">
+								<div class="loan-users__pix-container">
+									<img src="../assets/images/profile_image.jpg" class="loan-users__pix">
+								</div>
+								<div class="loan-users__name-container">
+									<p class="loan-users__name">Njoagwu Ewere</p>
+								</div>
+							</div>
+							<div class="loan-users__info">
+								<div class="loan-users__info-each loan-users__info-each--message">
+									<a href="" class="fa fa-paper-plane" aria-hidden="true"></a>
+								</div>
+								<div class="loan-users__info-each">
+									<img class="loan-users__defaulters-calendar" src="../assets/images/defaulters-calendar-90.png">
+								</div>
+								<div class="loan-users__info-each">
+									<p class="loan-users__loan-amount">$3,000</p>
+								</div>
+							</div>
+						</div>
+						<div class="loan-users__each section-pad--block-l section-pad--block-r section-pad--block-t section-pad--block-b">
+							<div class="loan-users__info">
+								<div class="loan-users__pix-container">
+									<img src="../assets/images/profile_image.jpg" class="loan-users__pix">
+								</div>
+								<div class="loan-users__name-container">
+									<p class="loan-users__name">Njoagwu Ewere</p>
+								</div>
+							</div>
+							<div class="loan-users__info">
+								<div class="loan-users__info-each loan-users__info-each--message">
+									<a href="" class="fa fa-paper-plane" aria-hidden="true"></a>
+								</div>
+								<div class="loan-users__info-each">
+									<img class="loan-users__defaulters-calendar" src="../assets/images/defaulters-calendar-60.png">
+								</div>
+								<div class="loan-users__info-each">
+									<p class="loan-users__loan-amount">$3,000</p>
+								</div>
+							</div>
+						</div>
+						<div class="loan-users__each section-pad--block-l section-pad--block-r section-pad--block-t section-pad--block-b">
+							<div class="loan-users__info">
+								<div class="loan-users__pix-container">
+									<img src="../assets/images/profile_image.jpg" class="loan-users__pix">
+								</div>
+								<div class="loan-users__name-container">
+									<p class="loan-users__name">Njoagwu Ewere</p>
+								</div>
+							</div>
+							<div class="loan-users__info">
+								<div class="loan-users__info-each loan-users__info-each--message">
+									<a href="" class="fa fa-paper-plane" aria-hidden="true"></a>
+								</div>
+								<div class="loan-users__info-each">
+									<img class="loan-users__defaulters-calendar" src="../assets/images/defaulters-calendar-30.png">
+								</div>
+								<div class="loan-users__info-each">
+									<p class="loan-users__loan-amount">$3,000</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../temp/scripts/App.js"></script>
+</body>
+</html>

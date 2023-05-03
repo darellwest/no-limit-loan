@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loan Without Limitations</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../temp/styles/styles.css">
+	  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="loan-act" class="dashboard-body">
+	<header id="header" class="site-header site-header--dashboard">
+		<div class="wrapper">
+			<div class="site-header__menu-content--dashboard">
+				<nav class="primary-nav primary-nav--dashboard primary-nav--pull-right">
+					<ul>
+						<li> 
+							<div class="notification-dot"></div>
+							<a class="fas fa-envelope icons" href="../inbox/user.html"></a>
+						</li>
+						<li>
+							<div class="notification-dot"></div>
+							<a class="fas fa-bell icons" href=""></a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div id="site-header__dashboard-menu-icon" class="site-header__menu-icon">
+				<div class="site-header__menu-icon__middle"></div>
+			</div>
+		</div>
+	</header>
+	<div class="modal">
+		<div class="side-bar">
+			<div class="side-bar__nav-container side-bar__header">
+				<div class="side-bar__user-pic">
+					<img src="../assets/images/profile_image.jpg">
+					<div class="side-bar__username">
+						<p>Welcome! <span>Njoagwu Darell</span></p>
+					</div>
+				</div>
+				<div class="side-bar__last-seen">
+					<p>Last Login <span>Jan 14, 11:48 PM</span></p>
+				</div>
+				<!-- <div class="side-bar__item">
+					<div class="icons--item">
+						<span class="fa fa-dashboard icons--item__icon"></span>
+					</div>
+					<div class="side-bar__nav-title">General</div>
+				</div> -->
+			</div>
+			<div class="side-bar__nav-container">
+				<div class="side-bar__item">
+					<div class="icons--item">
+						<span class="fa fa-dashboard icons--item__icon"></span>
+					</div>
+					<div class="side-bar__nav-title"><a href="dashboard.html">General</a></div>
+				</div>
+			</div>
+			<div class="side-bar__nav-container">
+				<div class="side-bar__item">
+					<div class="icons--item">
+						<span class="fas fa-wallet icons--item__icon"></span>
+					</div>
+					<div class="side-bar__nav-title"><a href="credit-balance.html" >Credit Balance</a></div>
+				</div>
+			</div>
+			<div class="side-bar__nav-container">
+				<div class="side-bar__item">
+					<div class="icons--item active">
+						<span class="fas fa-spinner icons--item__icon"></span>
+					</div>
+					<div class="side-bar__nav-title"><a href="loan-activities.html" class="active">Loan Activities</a></div>
+				</div>
+			</div>
+			<div class="side-bar__nav-container">
+				<div class="side-bar__item">
+					<div class="icons--item">
+						<span class="fas fa-envelope  icons--item__icon"></span>
+					</div>
+					<div class="side-bar__nav-title"><a href="contact-support.html">Contact Support</a></div>
+				</div>
+			</div>
+			<div class="side-bar__nav-container">
+				<div class="side-bar__item">
+					<div class="icons--item">
+						<span class="fas fa-user icons--item__icon"></span>
+					</div>
+					<div class="side-bar__nav-title"><a href="profile.html">Profile</a></div>
+				</div>
+			</div>
+			<div class="side-bar__nav-container">
+				<div class="side-bar__item">
+					<div class="icons--item active--red">
+						<span class="fas fa-sign-out-alt icons--item__icon"></span>
+					</div>
+					<div class="side-bar__nav-title"><a href="profile.html" class="active--red">Sign Out</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="dashboard-content" class="dashboard-content">
+		<div class="wrapper section-pad--t">
+			<h3 class="generic-text generic-text--thin dashboard-content__heading">Loan Activities</h3>
+			<div class="dashboard-content__container section-pad--block-t">	
+				<div class="loan-activities">
+					<div class="loan-activities__pending-loan">
+						<h4 class="heading heading--center heading--5">Pending Loan Status</h4>
+						<div class="pending-loan-status section-pad--block-t">
+							<div class="pending-loan-status__container">
+								<div class="pending-loan-status__indicator">
+									<div class="pending-loan-status__per">50%</div>
+								</div>
+							</div>
+						</div>
+						<div class="pending-loan-status__details">
+							<div class="pending-loan-status__details-con section-pad--block-r">
+								<div class="pending-loan-status__details-each">
+										<div class="">
+											<div><h4 class="heading heading--center">Date Applied</h4></div>
+											<div><p>2021-04-30</p></div>
+										</div>
+										<div class="">
+											<div><h4 class="heading heading--center ">Estimated Disburse Date</h4></div>
+											<div><p>2021-05-14</p></div>
+										</div>
+										<div class="">
+											<div><h4 class="heading heading--center">Total Loan by Lender</h4></div>
+											<div><p>$300,000</p></div>
+										</div>
+								</div>
+								<div class="pending-loan-status__details-each">
+										<div class="">
+											<div><h4 class="heading heading--center">Assigned Lender</h4></div>
+											<div><p>Anthony Brown</p></div>
+										</div>
+										<div class="">
+											<div><h4 class="heading heading--center">Lender Country</h4></div>
+											<div><p>Nigeria</p></div>
+										</div>
+										<div class="">
+											<div><h4 class="heading heading--center">Requested Loan Amount</h4></div>
+											<div><p>$6,000.00</p></div>
+										</div>
+								</div>
+							</div>
+							<div class="dashboard-content__create-new-loan pending-loan-status__btn">
+								<a href="" class="dashboard-content__new-loan-link"><span class="fa fa-paper-plane"></span> Message Lender</a>
+							</div>
+						</div>
+					</div>
+					<div class="loan-activities__loan-history section-pad--t">
+						<div class="loan-activities__container row row--gutter">
+							<div class="row__col-4">
+								<div class="loan-activities__eli section-pad--block-t section-pad--block-b">
+									<h4 class="heading heading--light heading--center heading--6">Eligibility</h4>
+									<div class="section-pad--t">
+										<h4 class="loan-activities__bold-digi heading heading--light heading--center section-pad--block-t">70%</h4>
+									</div>
+								</div>
+							</div>
+							<div class="row__col-8">
+								<div class="loan-activities__acquired section-pad--block-t section-pad--block-l section-pad--block-b section-pad--block-r">
+									<div class="loan-activities__acquired-content">
+										<div class="loan-activities__damount">
+											<h4  class="heading heading--5 ">Your Total Acquired Loan</h4>
+											<h4 class="loan-activities__bold-digi heading loan-activities__tlamount">$20,000,000.00</h4>		
+										</div>
+										<div class="loan-activities__paid">
+											<div class="circle-guage">
+												<div id="outer" class="circle-guage__default-circle circle-guage__outer-circle circle-guage__common-circle"></div>
+												<div id="up-cover" class="circle-guage__up-cover circle-guage__default-circle circle-guage__half-moon circle-guage__common-circle circle-guage__half-moon--up"></div>
+												<div id="up" class="circle-guage__default-circle circle-guage__half-moon circle-guage__common-circle circle-guage__half-moon--up"></div>
+												<div id="down" class="circle-guage__default-circle circle-guage__half-moon circle-guage__common-circle circle-guage__half-moon--down"></div>
+												<div class="circle-guage__default-circle circle-guage__inner-circle">
+													<div class="circle-guage__per-num">
+														<h4 id="per" class="heading heading--center circle-guage__num">60<span>%</span></h4>
+														<h4 class="heading heading--center circle-guage__paid">PAID</h4>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="dashboard-content__create-new-loan"><a href="" class="dashboard-content__new-loan-link"><span class="fas fa-plus"></span> Create New Loan</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row row--gutter section-pad--ma-t">
+						<div class="row__col-4">
+							<div class="loan-activities__ava-out section-pad--block-b">
+								<div class="loan-activities__ava-out-head"><h4>Available Loan Products</h4></div>
+								<div class="loan-activities__ava-out-num"><h4>2</h4></div>
+							</div>
+							<div class="loan-activities__loan-images">
+								<div>
+									<picture>
+										<source srcset = "../assets/images/realestateloan.png" media="(min-width: 1500px)">	
+										<source srcset = "../assets/images/real-estate--no-step.png" media="(min-width: 750px)">	
+										<source srcset = "../assets/images/realestateloan.png" media="(min-width: 380px)">	
+										<img class="loan-activities__loan-images-all" src="../assets/images/real-estate--no-step.png" alt="">
+									</picture>
+									<div class="loan-activities__loan-images-content">
+										<h4>Instant Loan</h4>
+										<p>Real Estate Loan</p>
+									</div>	
+									<div class="loan-activities__loan-images-footer">
+										<div><p>APPLY</p></div>
+										<div class="loan-activities__loan-images-icon">
+											<span class="fas fa-arrow-right"></span>
+										</div>
+									</div>
+								</div>
+								<div>
+									<picture>	
+										<source class="loan-activities__loan-images-all" srcset = "../assets/images/car-loan.png" media="(min-width: 1500px)">
+										<source class="loan-activities__loan-images-all" srcset = "../assets/images/car-loan-no-3.png" media="(min-width: 750px)">
+										<source class="loan-activities__loan-images-all" srcset = "../assets/images/car-loan.png" media="(min-width: 380px)">	
+										<img class="loan-activities__loan-images-all" src="../assets/images/car-loan-no-3.png" alt="">
+									</picture>
+									<div class="loan-activities__loan-images-content">
+										<h4>Other Loan</h4>
+										<p>Car Purchase Loan</p>
+									</div>	
+									<div class="loan-activities__loan-images-footer">
+										<div><p>APPLY</p></div>
+										<div class="loan-activities__loan-images-icon">
+											<span class="fas fa-arrow-right"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row__col-8">
+							<div class="loan-activities__ava-out section-pad--block-b">
+								<div class="loan-activities__ava-out-head"><h4>Oustanding Loans</h4></div>
+								<div class="loan-activities__ava-out-num"><h4>4</h4></div>
+							</div>
+							<div class="loan-activities__out">
+								<table>
+									<tr class="loan-activities__out-heading">
+										<th>Loan Type</th>
+										<th>Amount Left</th>
+										<th>Due Date</th>
+									</tr>
+									<tr>
+										<td>Real Estate</td>
+										<td>$100,000,000</td>
+										<td class="loan-activities__due-date">2021-05-08</td>
+									</tr>
+									<tr>
+										<td>Real Estate</td>
+										<td>$100,000,000</td>
+										<td class="loan-activities__due-date">2021-05-08</td
+									</tr>
+									<tr>
+										<td>Real Estate</td>
+										<td>$100,000,000</td>
+										<td class="loan-activities__due-date">2021-05-08</td
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="loan-activities__repayment-history">
+						<div class="loan-activities__ava-out section-pad--block-b">
+							<div class="loan-activities__ava-out-head"><h4>Repayment History</h4></div>
+							<div class="loan-activities__ava-out-num"><h4>4</h4></div>
+						</div>
+						<div class="loan-activities__repayment-contain">
+							<table class="loan-activities__repayment-table-desk">
+								<tr>
+									<th>Date</th>
+									<th>Loan Type</th>
+									<th>Amount Paid</th>
+									<th>Payment Method</th>
+									<th>Reference</th>
+								</tr>
+								<tr>
+									<td class="loan-activities__repayment-date">2021-01-08</td>
+									<td>Real estate</td>
+									<td><span>&#8358;</span>20,000</td>
+									<td>Bank Transfer</td>
+									<td>NLL328429p</td>
+								</tr>
+								<tr>
+									<td class="loan-activities__repayment-date">2021-01-08</td>
+									<td>Real estate</td>
+									<td><span>&#8358;</span>20,000</td>
+									<td>Bank Transfer</td>
+									<td>NLL328429p</td>
+								</tr>
+								<tr>
+									<td class="loan-activities__repayment-date">2021-01-08</td>
+									<td>Real estate</td>
+									<td><span>&#8358;</span>20,000</td>
+									<td>Bank Transfer</td>
+									<td>NLL328429p</td>
+								</tr>
+								<tr>
+									<td class="loan-activities__repayment-date">2021-01-08</td>
+									<td>Real estate</td>
+									<td><span>&#8358;</span>20,000</td>
+									<td>Bank Transfer</td>
+									<td>NLL328429p</td>
+								</tr>
+								<tr>
+									<td class="loan-activities__repayment-date">2021-01-08</td>
+									<td>Real estate</td>
+									<td><span>&#8358;</span>20,000</td>
+									<td>Bank Transfer</td>
+									<td>NLL328429p</td>
+								</tr>
+							</table>
+							<table class="loan-activities__repayment-table-mobile">
+								<tr>
+									<th>Date:</th>
+									<td class="loan-activities__repayment-date">2021-01-08</td>
+								</tr>
+								<tr>
+									<th>Loan Type</th>
+									<td>Real estate</td>
+								</tr>
+								<tr>
+									<th>Amount Paid</th>
+									<td><span>&#8358;</span>20,000</td>
+								</tr>
+								<tr>
+									<th>Payment Method</th>
+									<td>Bank Transfer</td>
+								</tr>
+								<tr>
+									<th>Reference</th>
+									<td>NLL328429p</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../temp/scripts/App.js"></script>
+</body>
+</html>

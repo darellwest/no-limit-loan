@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loan Without Limitations</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../temp/styles/styles.css">
+	  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="inbox-body" class="dashboard-body">
+	<header id="header" class="site-header site-header--dashboard">
+		<div class="wrapper">
+			<div class="site-header__menu-content--dashboard">
+				<nav class="primary-nav primary-nav--dashboard primary-nav--pull-right">
+					<ul>
+						<li> 
+							<div class="notification-dot"></div>
+							<a class="fas fa-envelope icons" href=""></a>
+						</li>
+						<li>
+							<div class="notification-dot"></div>
+							<a class="fas fa-bell icons" href=""></a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div id="site-header__dashboard-menu-icon" class="site-header__menu-icon">
+				<div class="site-header__menu-icon__middle"></div>
+			</div>
+		</div>
+	</header>
+	<div class="modal" style="display: none;">
+		<div class="side-bar" style="display: none;">
+			<div class="side-bar__nav-container side-bar__header">
+				<div class="side-bar__user-pic">
+					<img src="../assets/images/profile_image.jpg">
+					<div class="side-bar__username">
+						<p>Welcome! <span>Njoagwu Darell</span></p>
+					</div>
+				</div>
+				<div class="side-bar__last-seen">
+					<p>Last Login <span>Jan 14, 11:48 PM</span></p>
+				</div>
+				<!-- <div class="side-bar__item">
+					<div class="icons--item">
+						<span class="fa fa-dashboard icons--item__icon"></span>
+					</div>
+					<div class="side-bar__nav-title">General</div>
+				</div> -->
+			</div>
+			<div class="side-bar__nav-container">
+				<div class="side-bar__item">
+					<div class="icons--item">
+						<span class="fa fa-dashboard icons--item__icon"></span>
+					</div>
+					<div class="side-bar__nav-title"><a href="dashboard.html">General</a></div>
+				</div>
+			</div>
+			<div class="side-bar__nav-container">
+				<div class="side-bar__item">
+					<div class="icons--item">
+						<span class="fas fa-wallet icons--item__icon"></span>
+					</div>
+					<div class="side-bar__nav-title"><a href="credit-balance.html" >Credit Balance</a></div>
+				</div>
+			</div>
+			<div class="side-bar__nav-container">
+				<div class="side-bar__item">
+					<div class="icons--item">
+						<span class="fas fa-spinner icons--item__icon"></span>
+					</div>
+					<div class="side-bar__nav-title"><a href="loan-activities.html">Loan Activities</a></div>
+				</div>
+			</div>
+			<div class="side-bar__nav-container">
+				<div class="side-bar__item">
+					<div class="icons--item">
+						<span class="fas fa-envelope  icons--item__icon"></span>
+					</div>
+					<div class="side-bar__nav-title"><a href="contact-support.html">Contact Support</a></div>
+				</div>
+			</div>
+			<div class="side-bar__nav-container">
+				<div class="side-bar__item">
+					<div class="icons--item active">
+						<span class="fas fa-user icons--item__icon"></span>
+					</div>
+					<div class="side-bar__nav-title"><a href="profile.html" class="active">Profile</a></div>
+				</div>
+			</div>
+			<div class="side-bar__nav-container">
+				<div class="side-bar__item">
+					<div class="icons--item active--red">
+						<span class="fas fa-sign-out-alt icons--item__icon"></span>
+					</div>
+					<div class="side-bar__nav-title"><a href="profile.html" class="active--red">Sign Out</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="inbox inbox--sm-all"> 
+		<div class="wrapper section-pad--t">
+			<div class="inbox__container">	
+				<div class="row">
+					<div class="row__col-3 inbox__all--hide">
+						<div class="inbox__all">
+							<div class="inbox__all-head">
+								<div class="inbox__all-head-search-convo">
+									<div id="inbox-all-nav" class="inbox__all-nav">
+										<div><p>All Conversations</p></div>
+										<div><span class="fas fa-caret-down"></span></div>	
+									</div>
+									<div class="inbox__search"><span class="fa fa-search"></span></div>
+								</div>
+								<div class="inbox__convo-actions">
+									<!-- <span class="far fa-envelope-open"></span> -->
+									<span class="fa fa-file-archive-o"></span>
+									<span class="fa fa-star-o"></span>
+									<span class="far fa-trash-alt"></span>
+									<div class="tooltip tooltip--arch">
+										<span>Add to Archive</span>
+									</div>
+									<div class="tooltip tooltip--star">
+										<span>Star</span>
+									</div>
+									<div class="tooltip tooltip--del">
+										<span>Delete</span>
+									</div>
+								</div>
+								<div id="inbox-nav-menu" class="inbox__nav-menu">
+									<div class="inbox__nav-list-con">
+										<ul class="inbox__nav-list-ul inbox__nav-list-ul--first">
+											<li class="inbox__nav-list-li">
+												<a href="">All Coversations</a>
+											</li>
+											<li class="inbox__nav-list-li">
+												<a href="">Unread</a>
+											</li>
+											<li class="inbox__nav-list-li">
+												<a href="">starred</a>
+											</li>
+										</ul>
+										<ul class="inbox__nav-list-ul">
+											<li class="inbox__nav-list-li">
+												<a href="">Archived</a>
+											</li>
+											<li class="inbox__nav-list-li">
+												<a href="">Spam</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="inbox__search-bar-wrapper">
+									<div class="inbox__search-bar">
+										<div class="inbox__d-search-bar">
+											<input placeholder="Search a username" type="search" name="message-search">
+										</div>
+										<div>
+											<span class="inbox__search-bar-close">Close</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="inbox-sender-all-body" class="inbox__sender-all-body">
+								<div class="inbox__all-body-wrapper">
+									<div class="inbox__sender inbox__sender--active">
+										<div class="inbox__sender-container">
+											<div class="inbox__sender-pix-name-txt">
+												<div class="inbox__sender-pix">
+													<img src="../assets/images/profile_image.jpg">
+												</div>
+												<div class="inbox__sender-name-txt">
+													<div class="inbox__sender-name"><p>zeus</p></div>
+													<div class="inbox__sender-txt"><p>Hi, there...</p></div>
+												</div>
+											</div>
+											<div>
+												<div class="inbox__sender-last-chat"><p>1 month</p></div>
+												<!-- <div class="inbox__read">
+													<div class="inbox__unread-count"><p>1</p></div>
+													<div><span class="fas fa-envelope"></span></div>
+												</div> -->
+											</div>
+										</div>
+									</div>
+									<div class="inbox__sender">
+										<div class="inbox__sender-container">
+											<div class="inbox__sender-pix-name-txt">
+												<div class="inbox__sender-pix">
+													<img src="../assets/images/profile_image.jpg">
+												</div>
+												<div class="inbox__sender-name-txt">
+													<div class="inbox__sender-name"><p>zeus</p></div>
+													<div class="inbox__sender-txt"><p>Hi, there...</p></div>
+												</div>
+											</div>
+											<div class="inbox__sender-mcm">
+												<div class="inbox__sender-star-chat">
+													<span class="inbox__sender-last-chat">2 months</span>
+													<span class="far fa-star"></span>
+												</div>
+												<div class="inbox__read">
+													<div class="inbox__unread-count"><p>1</p></div>
+													<div><span class="fas fa-envelope"></span></div>
+													<div class="inbox__checkbox">
+														<span class="fas fa-check"></span>
+														<input type="checkbox" class="check-input">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="inbox__sender  crom">
+										<div class="inbox__sender-container">
+											<div class="inbox__sender-pix-name-txt">
+												<div class="inbox__sender-pix">
+													<img src="../assets/images/profile_image.jpg">
+												</div>
+												<div class="inbox__sender-name-txt">
+													<div class="inbox__sender-name"><p>zeus</p></div>
+													<div class="inbox__sender-txt"><p>Hi, there...</p></div>
+												</div>
+											</div>
+											<div class="inbox__sender-mcm">
+												<div class="inbox__sender-star-chat">
+													<span class="inbox__sender-last-chat">2 months</span>
+													<span class="far fa-star"></span>
+												</div>
+												<div class="inbox__read">
+													<div class="inbox__unread-count"><p>1</p></div>
+													<div><span class="fas fa-envelope"></span></div>
+													<div class="inbox__checkbox">
+														<span class="fas fa-check"></span>
+														<input type="checkbox" class="check-input">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row__col-6 inbox__chat--hide">
+						<div class="inbox__chat-head">
+							<div class="inbox__sleep-icon"><span class="fas fa-bed"></span></div>
+							<div class="inbox__username"><span>zeus</span></div>
+							<div class="inbox__last-time">
+								<div class="inbox__last-seen">
+									<span>Last seen 40m ago</span>
+								</div>
+								<div class="inbox__local-time"><span>Local timeJun 07, 3:34 AM</span></div>
+							</div>
+						</div>
+						<div class="inbox__message-flow">
+							<div class="inbox__chat-body">
+								<div class="inbox__guarantee-cont">
+									<div class="inbox__guarantee">
+										<div class="inbox__guarantee-icon">
+											<span class="fas fa-user-shield"></span>
+										</div>
+										<div class="inbox__guarantee-txt">
+											<span>We have your back</span>
+										</div>
+									</div>
+								</div>
+								<div class="inbox__advice">
+									<p>For added safety and your protection, keep payments and communications within NLL. <a href="">Learn more</a></p>
+								</div>
+								<div class="inbox__cht-ent">
+									<div class="inbox__cht-ent-img"><img src="../assets/images/profile_image.jpg"></div>
+									<div class="inbox__cht-ent-con">
+										<div class="inbox__cht-ent-head">
+											<span class="inbox__cht-ent-user">Me</span>
+											<span class="inbox__cht-ent-time">Mar 28, 6:02 AM</span>
+											<div class="inbox__rep-spa-con">
+												<div class="inbox__fla-rep">
+													<span class="fas fa-flag"></span>
+													<span class="">Report</span>
+												</div>
+												<div class="inbox__spa-spa">
+													<span class="fas fa-exclamation-triangle"></span>
+													<span class="">Spam</span>
+												</div>
+											</div>
+										</div>
+										<div class="inbox__cht-ent-txt">
+											<p>Hi, When should i expect the loan from you?</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="inbox__chat-uploader">
+								<div class="inbox__txt-area-container">
+									<textarea autofocus class="inbox__txt-area"></textarea>
+								</div>
+								<div class="inbox__send-tools">
+									<div class="inbox__send-icons">
+										<span class="fa fa-smile-o"></span>
+										<span class="fa fa-bolt"></span>
+										<span class="fa fa-paperclip"></span>
+									</div>
+									<div>
+										<span class="fas fa-caret-down"></span>
+										<span class="inbox__send-btn">Send</span>	
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row__col-3 inbox__about--hide">
+						<div class="inbox__about-head">
+						</div>
+						<div class="inbox__about-body">
+							<h4>About</h4>
+							<div class="inbox__about-id">
+								<div><img src="../assets/images/profile_image.jpg"></div>
+								<div class="inbox__about-name">
+									<p class="inbox__username">zeus</p>
+								</div>
+								<div class="inbox__about-level">
+									<p class="generic-text generic-text--thick">Level 4 Lender</p>
+								</div>
+							</div>
+							<div class="inbox__about-bio">
+								<div class="inbox__about-bio-each">
+									<div class="inbox__about-review">Review</div>
+									<div class="inbox__about-rating">
+										<span class="fa fa-star"></span>
+										<span class="inbox__about-rating-container">
+											<span class="inbox__about-rating-point inbox__about-val">5.0</span>
+											<span class="inbox__about-rating-volume">(699)</span>
+										</span>
+									</div>
+								</div>
+								<div class="inbox__about-bio-each">
+									<div class="inbox__about-review">Avg. Response Time</div>
+									<div class="inbox__about-rating">
+										<span class="inbox__about-val">1hr</span>
+									</div>
+								</div>
+								<div class="inbox__about-bio-each">
+									<div class="inbox__about-prop">From</div>
+									<div class="inbox__about-rating">
+										<span class="inbox__about-val">Nigeria</span>
+									</div>
+								</div>
+								<div class="inbox__about-bio-each">
+									<div class="inbox__about-review">French</div>
+									<div class="inbox__about-rating">
+										<span class="inbox__about-val">Conversational</span>
+									</div>
+								</div>
+								<div class="inbox__about-bio-each">
+									<div class="inbox__about-review">Avg. Response Time</div>
+									<div class="inbox__about-rating">
+										<span class="inbox__about-val">1hr</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../temp/scripts/App.js"></script>
+</body>
+</html>

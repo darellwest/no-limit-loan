@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loan Without Limitations</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="temp/styles/styles.css">
+	  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="credit-balance" class="dashboard-body">
+	<header id="header" class="site-header site-header--dashboard">
+		<div class="wrapper">
+			<div class="site-header__menu-content--dashboard">
+				<nav class="primary-nav primary-nav--dashboard primary-nav--pull-right">
+					<ul>
+						<li> 
+							<div class="notification-dot"></div>
+							<a class="fas fa-envelope icons" href=""></a>
+						</li>
+						<li>
+							<div class="notification-dot"></div>
+							<a class="fas fa-bell icons" href=""></a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div id="site-header__dashboard-menu-icon" class="site-header__menu-icon">
+				<div class="site-header__menu-icon__middle"></div>
+			</div>
+		</div>
+	</header>
+	<div class="modal">
+		<div class="side-bar">
+			<div class="side-bar__nav-container side-bar__header">
+				<div class="side-bar__user-pic">
+					<img src="./assets/images/profile_image.jpg">
+					<div class="side-bar__username">
+						<p>Welcome! <span>Njoagwu Darell</span></p>
+					</div>
+				</div>
+				<div class="side-bar__last-seen">
+					<p>Last Login <span>Jan 14, 11:48 PM</span></p>
+				</div>
+				<!-- <div class="side-bar__item">
+					<div class="icons--item">
+						<span class="fa fa-dashboard icons--item__icon"></span>
+					</div>
+					<div class="side-bar__nav-title">General</div>
+				</div> -->
+			</div>
+			<div class="side-bar__nav-container">
+				<div class="side-bar__item">
+					<div class="icons--item">
+						<span class="fa fa-dashboard icons--item__icon"></span>
+					</div>
+					<div class="side-bar__nav-title"><a href="dashboard.html">General</a></div>
+				</div>
+			</div>
+			<div class="side-bar__nav-container">
+				<div class="side-bar__item">
+					<div class="icons--item active">
+						<span class="fas fa-wallet icons--item__icon"></span>
+					</div>
+					<div class="side-bar__nav-title"><a href="credit-balance.html" class="active">Credit Balance</a></div>
+				</div>
+			</div>
+			<div class="side-bar__nav-container">
+				<div class="side-bar__item">
+					<div class="icons--item">
+						<span class="fas fa-spinner icons--item__icon"></span>
+					</div>
+					<div class="side-bar__nav-title"><a href="loan-activities.html">Loan Activities</a></div>
+				</div>
+			</div>
+			<div class="side-bar__nav-container">
+				<div class="side-bar__item">
+					<div class="icons--item">
+						<span class="fas fa-envelope  icons--item__icon"></span>
+					</div>
+					<div class="side-bar__nav-title"><a href="contact-support.html">Contact Support</a></div>
+				</div>
+			</div>
+			<div class="side-bar__nav-container">
+				<div class="side-bar__item">
+					<div class="icons--item">
+						<span class="fas fa-user icons--item__icon"></span>
+					</div>
+					<div class="side-bar__nav-title"><a href="profile.html">Profile</a></div>
+				</div>
+			</div>
+			<div class="side-bar__nav-container">
+				<div class="side-bar__item">
+					<div class="icons--item active--red">
+						<span class="fas fa-sign-out-alt icons--item__icon"></span>
+					</div>
+					<div class="side-bar__nav-title"><a href="profile.html" class="active--red">Sign Out</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="dashboard-content" class="dashboard-content">
+		<div class="wrapper section-pad--t">
+			<h3 class="generic-text generic-text--thin dashboard-content__heading">Credit Balance</h3>
+			<div class="dashboard-content__container">
+				<div class="credit-balance">
+					<div class="credit-balance__account section-pad--block-t section-pad--block-b">
+						<div class="credit-balance__details">
+							<span class="credit-balance__acc-num">CREDIT ACCOUNT: </span>
+							<span class="credit-balance__acc-num">4310 6673 79</span>
+						</div>
+						<div class="credit-balance__amount">$145,000,000</div>
+					</div>
+					<div class="credit-balance__history section-pad--t">
+						<h3 class="heading heading--no-space-down heading--6 heading--center">Transaction History</h3>
+						<div class="credit-balance__history-container row row--gutter">
+							<div class="row__col-6">
+								<div class="credit-balance__history-header">
+									<div class="credit-balance__history-title active"><h4 class="heading heading--5">Credit Transaction</h4></div>
+									<div class="credit-balance__history-calendar"><a id="credit-calendar" href="" class="fa fa-calendar"></a></div>
+								</div>
+								<div class="credit-balance__history-each">
+									<div class="credit-balance__history-each-container">
+										<div class="credit-balance__transaction-detail">
+											<div class="credit-balance__arrow-container">
+												<i class="far fa-arrow-alt-circle-up active"></i>
+											</div>
+											<div class="credit-balance__ref-digit">
+												<div class="credit-balance__ref"><p class="credit-balance__ref-text">NLL/Dan vic/REF8833799</p></div>
+												<div class="credit-balance__digit"><p class="credit-balance__digit-text active">$30,000.00</p></div>
+											</div>
+										</div>
+										<div  class="credit-balance__transaction-date">
+											<p class="credit-balance__transaction-date-text">Jan 20, 2021</p>
+										</div>
+									</div>
+								</div>
+								<div class="credit-balance__history-each">
+									<div class="credit-balance__history-each-container">
+										<div class="credit-balance__transaction-detail">
+											<div class="credit-balance__arrow-container">
+												<i class="far fa-arrow-alt-circle-up active"></i>
+											</div>
+											<div class="credit-balance__ref-digit">
+												<div class="credit-balance__ref"><p class="credit-balance__ref-text">NLL/Dan vic/REF8833799</p></div>
+												<div class="credit-balance__digit"><p class="credit-balance__digit-text active">$30,000.00</p></div>
+											</div>
+										</div>
+										<div  class="credit-balance__transaction-date">
+											<p class="credit-balance__transaction-date-text">Jan 20, 2021</p>
+										</div>
+									</div>
+								</div>
+								<div class="credit-balance__history-each">
+									<div class="credit-balance__history-each-container">
+										<div class="credit-balance__transaction-detail">
+											<div class="credit-balance__arrow-container">
+												<i class="far fa-arrow-alt-circle-up active"></i>
+											</div>
+											<div class="credit-balance__ref-digit">
+												<div class="credit-balance__ref"><p class="credit-balance__ref-text">NLL/Dan vic/REF8833799</p></div>
+												<div class="credit-balance__digit"><p class="credit-balance__digit-text active">$30,000.00</p></div>
+											</div>
+										</div>
+										<div  class="credit-balance__transaction-date">
+											<p class="credit-balance__transaction-date-text">Jan 20, 2021</p>
+										</div>
+									</div>
+								</div>
+								<div class="credit-balance__history-each">
+									<div class="credit-balance__history-each-container">
+										<div class="credit-balance__transaction-detail">
+											<div class="credit-balance__arrow-container">
+												<i class="far fa-arrow-alt-circle-up active"></i>
+											</div>
+											<div class="credit-balance__ref-digit">
+												<div class="credit-balance__ref"><p class="credit-balance__ref-text">NLL/Dan vic/REF8833799</p></div>
+												<div class="credit-balance__digit"><p class="credit-balance__digit-text active">$30,000.00</p></div>
+											</div>
+										</div>
+										<div  class="credit-balance__transaction-date">
+											<p class="credit-balance__transaction-date-text">Jan 20, 2021</p>
+										</div>
+									</div>
+								</div>
+								<div class="credit-balance__history-each">
+									<div class="credit-balance__history-each-container">
+										<div class="credit-balance__transaction-detail">
+											<div class="credit-balance__arrow-container">
+												<i class="far fa-arrow-alt-circle-up active"></i>
+											</div>
+											<div class="credit-balance__ref-digit">
+												<div class="credit-balance__ref"><p class="credit-balance__ref-text">NLL/Dan vic/REF8833799</p></div>
+												<div class="credit-balance__digit"><p class="credit-balance__digit-text active">$30,000.00</p></div>
+											</div>
+										</div>
+										<div  class="credit-balance__transaction-date">
+											<p class="credit-balance__transaction-date-text">Jan 20, 2021</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row__col-6">
+								<div class="credit-balance__history-header">
+									<div class="credit-balance__history-title active--red"><h4 class="heading heading--5">Debit Transaction</h4></div>
+									<div  class="credit-balance__history-calendar"><a id="debit-calendar" href="" class="fa fa-calendar"></a></div>
+								</div>
+								<div class="credit-balance__history-each">
+									<div class="credit-balance__history-each-container">
+										<div class="credit-balance__transaction-detail">
+											<div class="credit-balance__arrow-container">
+												<i class="far fa-arrow-alt-circle-down active--red"></i>
+											</div>
+											<div class="credit-balance__ref-digit">
+												<div class="credit-balance__ref"><p class="credit-balance__ref-text">NLL/Dan vic/REF8833799</p></div>
+												<div class="credit-balance__digit"><p class="credit-balance__digit-text active--red">$-30,000.00</p></div>
+											</div>
+										</div>
+										<div  class="credit-balance__transaction-date">
+											<p class="credit-balance__transaction-date-text">Jan 20, 2021</p>
+										</div>
+									</div>
+								</div>
+								<div class="credit-balance__history-each">
+									<div class="credit-balance__history-each-container">
+										<div class="credit-balance__transaction-detail">
+											<div class="credit-balance__arrow-container">
+												<i class="far fa-arrow-alt-circle-down active--red"></i>
+											</div>
+											<div class="credit-balance__ref-digit">
+												<div class="credit-balance__ref"><p class="credit-balance__ref-text">NLL/Dan vic/REF8833799</p></div>
+												<div class="credit-balance__digit"><p class="credit-balance__digit-text active--red">$-30,000.00</p></div>
+											</div>
+										</div>
+										<div  class="credit-balance__transaction-date">
+											<p class="credit-balance__transaction-date-text">Jan 20, 2021</p>
+										</div>
+									</div>
+								</div>
+								<div class="credit-balance__history-each">
+									<div class="credit-balance__history-each-container">
+										<div class="credit-balance__transaction-detail">
+											<div class="credit-balance__arrow-container">
+												<i class="far fa-arrow-alt-circle-down active--red"></i>
+											</div>
+											<div class="credit-balance__ref-digit">
+												<div class="credit-balance__ref"><p class="credit-balance__ref-text">NLL/Dan vic/REF8833799</p></div>
+												<div class="credit-balance__digit"><p class="credit-balance__digit-text active--red">$-30,000.00</p></div>
+											</div>
+										</div>
+										<div  class="credit-balance__transaction-date">
+											<p class="credit-balance__transaction-date-text">Jan 20, 2021</p>
+										</div>
+									</div>
+								</div>
+								<div class="credit-balance__history-each">
+									<div class="credit-balance__history-each-container">
+										<div class="credit-balance__transaction-detail">
+											<div class="credit-balance__arrow-container">
+												<i class="far fa-arrow-alt-circle-down active--red"></i>
+											</div>
+											<div class="credit-balance__ref-digit">
+												<div class="credit-balance__ref"><p class="credit-balance__ref-text">NLL/Dan vic/REF8833799</p></div>
+												<div class="credit-balance__digit"><p class="credit-balance__digit-text active--red">$-30,000.00</p></div>
+											</div>
+										</div>
+										<div  class="credit-balance__transaction-date">
+											<p class="credit-balance__transaction-date-text">Jan 20, 2021</p>
+										</div>
+									</div>
+								</div>
+								<div class="credit-balance__history-each">
+									<div class="credit-balance__history-each-container">
+										<div class="credit-balance__transaction-detail">
+											<div class="credit-balance__arrow-container">
+												<i class="far fa-arrow-alt-circle-down active--red"></i>
+											</div>
+											<div class="credit-balance__ref-digit">
+												<div class="credit-balance__ref"><p class="credit-balance__ref-text">NLL/Dan vic/REF8833799</p></div>
+												<div class="credit-balance__digit"><p class="credit-balance__digit-text active--red">$-30,000.00</p></div>
+											</div>
+										</div>
+										<div  class="credit-balance__transaction-date">
+											<p class="credit-balance__transaction-date-text">Jan 20, 2021</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="credit-modal-calendar-filter" class="modal--calendar-filter">
+		<div id="credit-calendar-filter-content" class="modal--calendar-filter__content">
+			<div class="modal--calendar-filter__from-to">
+				<div class="modal--calendar-filter__from">
+					<p class="modal--calendar-filter__date-text">From Date:</p>
+					<div class="modal--calendar-filter__date"><p id="fromdate">2021-01-08</p></div>
+					<div class="modal--calendar-filter__cal"><a id="from" href="" class="modal--calendar-filter__from-icon fa fa-calendar"></a></div>
+				</div>
+				<div class="modal--calendar-filter__to">
+					<p class="modal--calendar-filter__date-text">To Date:</p>
+					<div class="modal--calendar-filter__date"><p id="todate">2021-01-08</p></div>
+					<div class="modal--calendar-filter__cal"><a id="to" href="" class="modal--calendar-filter__to-icon fa fa-calendar"></a></div>
+				</div>
+			</div>
+			<a id="apply" href="#" class="btn btn--active btn--full-width btn--center-text btn--font-light btn--centralize">APPLY</a>
+			<a id="close"  href="" class="modal--calendar-filter__close btn  btn--center-text btn--font-red btn--centralize">CLOSE</a>
+		</div>
+	</div>
+	<div id="calendar-box" class="calendar-box">
+		<i id="nav-arrow-left" class="calendar-box__angle-left fas fa-angle-left"></i>
+		<i id="nav-arrow-right" class="calendar-box__angle-right fas fa-angle-right"></i>
+		<div class="calendar-box__year-list">
+			<!--p elements with class calendar-box__each-year-text are 
+			dynamically created by js on this space -->
+		</div>
+		<div class="calendar-box__heading">
+			<h4 class="calendar-box__heading-year">
+				<!-- year text is generated dynamically here -->
+			</h4>
+			<h3 class="calendar-box__heading-date-month">
+				<!-- month and date text is generated dynamically here -->
+			</h3>
+		</div>
+		
+		<!-- end of calendar body-->
+		
+		<div class="calendar-box__cancel-ok">
+			<div id="calendar-box__cancel" class="calendar-box__cancel"><span id="cancel">cancel</span></div>
+			<div class="calendar-box__ok"><span id="ok">ok</span></div>
+		</div>
+	</div>
+	<script src="./temp/scripts/App.js"></script>
+</body>
+</html>
